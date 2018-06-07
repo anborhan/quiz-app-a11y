@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Stephen King Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+   <nav role="navigation" class="pageInfo">
+      <div class="topBar">
+        <div class="title">
+          <h1>Stephen King Quiz</h1>
+        </div>
+      <div>
+        <ul class="stats">
+          <li class="questionProgress" style="display:none"></li>
+          <li class="answerProgress"></li>
+        </ul> 
+      </div>
+    </div>
+    </nav>
+    <main role="main" class="main">
+      <section id="startPage" role="region">
+        <p class="welcome">
+          Think you know the modern master of horror? Take this quiz to find out!
+        </p>
+        <button type="button" id="begin">Click Here to Get Started!</button>
+      </section>
+      <section id="questionPage" role="region">
+        <div class="questionPanel">
+         <p class="questionValue"></p>
+         <p class="question">Original</p>
+        </div>
+        <form role="form" method="post" class="answers">
+          <fieldset>
+            <legend class="legendQuestion">Answers</legend> <!--This legend is set to the current question for help with accessibility, but defaults to "Answers" otherwise. In the front end, it should show the question being asked.-->
+              <div class="buttonDesign">
+                <input id="questionOne" type="radio" name="options" value="answerOne"  required>
+                <label class="buttonLabel" for="questionOne" align= "center"></label>
+              </div>
+              <div class="buttonDesign">            
+                <input id="questionTwo" type="radio" name="options" value="answerTwo" required>
+                <label class="buttonLabel" for="questionTwo" align= "center"></label>
+              </div>
+              <div class="buttonDesign">
+                <input id="questionThree" type="radio" name="options" value="answerThree" required>
+                <label class="buttonLabel" for="questionThree" align= "center"></label>
+              </div>
+              <div class="buttonDesign">           
+                <input id="questionFour" type="radio" name="options" value="answerFour" required>
+                <label class="buttonLabel" for="questionFour" align= "center" required></label>
+            </div>
+          </fieldset>
+          <button type="submit" class="answerEntry">Submit Answer</button>
+        </form>
+      </section>
+      <section id="feedbackPage" role="region">
+        <div class="feedbackStats">
+          <span class="congrats"></span>
+          <span class="info"></span>   
+        </div>
+        <button type="button" class="nextQuestion"></button>
+      </section>
+      <section id="resultsPage" role="region">
+        <div class="results">
+        </div>
+        <form>
+          <button type="button" id="restart" class="restartQuiz">Click here to retake the quiz!</button>
+        </form>
+      </section>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="quizquestions.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

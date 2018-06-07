@@ -1,0 +1,526 @@
+.mainBox {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.mainBox::before,
+.mainBox::after {
+  display: table;
+  content: '';
+}
+
+.mainBox::after {
+  clear: both;
+}
+
+.topBar {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+.pageInfo h1 {
+  margin-top: 4px;
+  font-size: 30px;
+  }
+
+
+/* Mobile defaults */
+.topBar {
+  width: 100%;
+}
+
+.title {
+  height: 35px;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+
+}
+
+nav li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav li.questionProgress::after {
+  content: "|";
+  margin-left: 5px;
+}
+
+main {
+  padding-top: 30px;
+}
+
+legend {
+  display: inline-block;
+  background-color: white;
+  border: black solid 2px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 60%;
+}
+
+#questionPage, #feedbackPage, #resultsPage {
+  display: none;
+}
+
+body {
+  background: url(https://i.imgur.com/WAy7ofB.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 20px;
+}
+
+.pageInfo {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.pageInfo h1 {
+   display: inline-block;
+   text-align: center;
+}
+
+.topBar {
+  background-color: white;
+  border: black solid 2px;
+
+}
+
+.feedbackStats {
+  position: relative;
+}
+
+.congrats {
+  position: absolute;
+  font-size: 30px;
+  top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.info {
+  font-size: 20px;
+}
+
+.welcome {
+  background-color: white;
+    border: black solid 2px;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.results {
+  background-color: white;
+    border: black solid 2px;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.feedbackStats {
+  background-color: white;
+    border: black solid 2px;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.question {
+  text-align: center;
+}
+
+.questionValue {
+  text-align: center;
+}
+
+
+.nextQuestion {
+    display: inline-block;
+    background-color: white;
+    border: black solid 2px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.feedbackStats {
+  white-space: pre-line;
+  text-align: center;
+}
+
+.buttonDesign {
+  display: block;
+    background-color: white;
+    border: black solid 1px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#begin {
+    display: inline-block;
+    background-color: white;
+    border: black solid 1px;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#restart {
+    display: inline-block;
+    background-color: white;
+    border: black solid 1px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button:hover, .buttonDesign:hover, #begin:hover, #restart:hover{
+  background-color: #E82C0C;
+  color: white;
+  cursor: pointer;
+}
+
+.answerEntry:hover{
+  background-color: #E82C0C;
+  color: white;
+  cursor: pointer;
+}
+
+#begin:focus, .nextQuestion:focus, .answerEntry:focus, #restart:focus{
+  background: #E82C0C;
+  color: white;
+}
+
+input[type="radio"]:focus + .buttonLabel {
+  color: white;
+}
+
+.buttonDesign:focus-within {
+  background: #E82C0C;
+}
+
+.buttonDesign:-within {
+  background: #E82C0C;
+}
+
+input[type="radio"]:checked + .buttonDesign {
+    background: #E82C0C;
+    color: white;
+}
+
+  .questionPanel {
+    background-color: white;
+    border: black solid 2px;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+fieldset {
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  border: 0;
+  margin: 10px;
+
+}
+
+button[type="submit"] {
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  border: black solid 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 10px; 
+  width: 70%;
+}
+
+h2 {
+  text-align: center;
+  vertical-align: middle; 
+   display: inline-block;
+}
+
+nav ul {
+      display: inline-block;
+      list-style: none;
+      padding-left: 0;
+
+}
+
+  nav li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav li.question::after {
+  content: "|";
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 950px) {
+
+  main {
+    padding-top: 50px;
+  }
+
+  .pageInfo h1 {
+    margin-top: 4px;
+    font-size: 40px;
+  }
+
+
+  nav ul {
+    display: table;
+    width: 100%;
+    margin-top: 30px;
+
+  }
+
+  .questionProgress {
+    position: relative;
+    float: left;
+  }
+
+  .answerProgress {
+    position: relative;
+    float: right;
+  }
+
+  nav li.questionProgress::after {
+  content: "";
+  margin-left: 5px;
+}
+
+button[type="submit"] {
+  width: 50%;
+}
+
+.nextQuestion {
+    display: inline-block;
+    background-color: white;
+    border: black solid 2px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.buttonDesign {
+  display: block;
+    background-color: white;
+    border: black solid 1px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#begin {
+    display: inline-block;
+    background-color: white;
+    border: black solid 1px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#restart {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+  .questionPanel {
+    background-color: white;
+    border: black solid 2px;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+     max-width: 600px;
+  }
+  
+}
+
+@media only screen and (min-width: 950px) {
+
+
+  main {
+    padding-top: 130px;
+  }
+  
+  .welcome {
+    width: 50%;
+  }
+
+  .pageInfo h1 {
+    margin-top: 4px;
+    font-size: 40px;
+  }
+
+  nav ul {
+    display: table;
+    width: 100%;
+    margin-top: 30px;
+
+  }
+
+  .questionProgress {
+    position: relative;
+    float: left;
+  }
+
+  .answerProgress {
+    position: relative;
+    float: right;
+  }
+
+  nav li {
+  font-size: 20px;
+  }
+
+  nav li.questionProgress::after {
+    content: none;
+  }
+  
+  button[type="submit"] {
+  width: 40%;
+  }
+
+
+  .nextQuestion {
+    display: inline-block;
+    background-color: white;
+    border: black solid 2px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.buttonDesign {
+  display: block;
+    background-color: white;
+    border: black solid 1px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#begin {
+    display: inline-block;
+    background-color: white;
+    border: black solid 1px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#restart {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;    
+}
+
+.results {
+    width: 50%;
+  }
+
+  .questionPanel {
+    background-color: white;
+    border: black solid 2px;
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .feedbackStats {
+    width: 50%;
+  }
+
+}
+  .highlight {
+  background-color: #E82C0C;
+  color: white;
+}
